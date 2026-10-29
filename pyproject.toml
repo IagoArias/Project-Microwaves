@@ -1,0 +1,24 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "IagoArias", email = "100497564@alumnos.uc3m.es" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "cartopy>=0.26.0",
+    "h5netcdf>=1.8.2",
+    "h5py>=3.16.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "xarray>=2026.9.0",
+]
+
+[project.scripts]
+project = "project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
